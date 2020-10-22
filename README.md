@@ -1,1 +1,2 @@
-# SpectralX.github.io
+# SpectralX.github.io/index.html - tesztoldal megtekintése.
+
