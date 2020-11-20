@@ -1,11 +1,24 @@
 *{
-    background-color: cadetblue;
+    font-family: 'Lora-VariableFont_wght';
 }
 
-#nav1{
-    opacity: 0.5; 
-    filter:(opacity=50);
-    box-shadow: 0 0 8px 0;
-    padding: 0 10px 50px 10px;
-    font-family: sans-serif;
+.jumbotron_bg{
+    background: url(/img/Background-Jumbotron/bg.jpg);
+    background-position: top;
 }
+
+.list1{
+    background-color: beige;
+    margin: 5px;
+}
+
+.focim {
+    font-family: 'Lora-VariableFont_wght';
+    font-size: 50px;
+}
+
+@font-face {
+    font-family: Lora-VariableFont_wght;
+    src: url(Fonts/Lora-VariableFont_wght);
+  }
+  
