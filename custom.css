@@ -1,0 +1,27 @@
+body{
+    background-color: lightpink;
+
+}
+
+
+.grid_fooldal{
+    /*Gridre tettem a méretet*/
+    display: grid;
+    /*Grid megvalósitás a 4 oszlopos*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*100px-elre tettem a oszlopok méretét*/
+    grid-template-rows: 100px 100px 100px 100px;
+    /*10px az oszlopok közötti távolság*/
+    grid-gap: 30px;
+
+}
+.grid_sorok{
+    background-color: floralwhite;
+    margin-bottom: 30px;
+}
+/*oszlop felosztás*/
+.grid_sorok:first-of-type,
+.grid_sorok:last-of-type{ grid-column: span 3; }
+.grid_sorok:nth-of-type(2){ grid-row: span 7 }
+.grid_sorok:nth-of-type(3){ grid-row: span 7; grid-column: span 2 }
+
