@@ -1,6 +1,6 @@
 body{
-    background-color: lightpink;
-
+    background-color: #ffe6e6;
+    
 }
 
 
@@ -13,15 +13,49 @@ body{
     grid-template-rows: 100px 100px 100px 100px;
     /*10px az oszlopok közötti távolság*/
     grid-gap: 30px;
-
 }
 .grid_sorok{
-    background-color: floralwhite;
+    background-color: #ffffff;
     margin-bottom: 30px;
+    box-shadow: 0 0 4px 0;
+    margin: 10px;
+    
 }
 /*oszlop felosztás*/
 .grid_sorok:first-of-type,
-.grid_sorok:last-of-type{ grid-column: span 3; }
-.grid_sorok:nth-of-type(2){ grid-row: span 7 }
-.grid_sorok:nth-of-type(3){ grid-row: span 7; grid-column: span 2 }
+.grid_sorok:last-of-type{ grid-column: span 3; grid-row: span 2; }
+.grid_sorok:nth-of-type(2){ grid-row: span 30 }
+.grid_sorok:nth-of-type(3){ grid-row: span 30; grid-column: span 2 }
 
+.display-4{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.lead{
+    text-align: center;
+}
+
+.scroll_text_body{
+    padding: 60px;
+    margin-top: 81px;
+}
+
+.jumbotron{
+    background-image: url(img/480087.jpg);
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+
+.text_grid{
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+    font-family: sans-serif;
+
+    
+}
+
+.tabla_kepek{
+    padding: 20px;
+}

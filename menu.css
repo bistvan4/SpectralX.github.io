@@ -20,11 +20,15 @@ a{
 }
 
 #navbar{
-    background-color: pink;
+    background-color: #ffcccc;
     padding: 20px;
     box-shadow: 0 0 15px 0;
     position: fixed;
     width: 100%;
+    opacity: 0.6;
+    top: 0;
+    overflow: hidden;
+
 
 }
 
@@ -34,19 +38,21 @@ a{
 }
 
 ul li a{
-    padding: 30px;
+    padding: 39px;
     font-weight: bold;
+
 }
 
 ul li a.selected{
-    background: indianred;
+    background: #ff9999;
 }
 
 ul li a:hover{
     color: #000;
-    background-color: crimson;
+    background-color: #ff4d4d;
     box-shadow: 0 0 10px 0;
-    opacity: 0.8;
+    text-decoration: none;
+    opacity: 1;
 }
 
 /* Hmmm Facebook?! :D  */
@@ -71,7 +77,7 @@ ul li a:hover{
 }
   
 .facebook {
-    background: #3B5998;
+    background: darkviolet;
     color: white;
 }
 
