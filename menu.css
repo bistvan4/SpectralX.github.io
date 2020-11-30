@@ -1,83 +1,135 @@
 *{
+    padding: 0;
     margin: 0;
-
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body{
     font-family: sans-serif;
-    background-image: url();
-    margin: 0;
+}
+
+#navbar{        /*nem végeleges teszt fázis.*/
+    position: fixed;
+    top: 0;
+    width: 1110px;
+
+}
+
+nav{
+    background-color: plum;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+    opacity: 0.9;
+}
+
+label.logo{
+    color: white;
+    padding: 5px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;  /*igazítás*/
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: mediumpurple;
+    color: aliceblue;
+    transition: .9s;    /*aminációs idő*/
+    box-shadow: 0 0 8px 0;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 992px){
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 995px){
+    .checkbtn{
+      display: block;
+}
+
+@media (max-width: 995px){
+    label.logo{
+        padding: 10px;
+        position: fixed;
+
 }
 
 ul{
-    list-style: none;
-    display: flex;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: lightpink;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .8s;
+      -webkit-transition: all .8s;
+      -moz-transition: all .8s;
+      -ms-transition: all .8s;
+      -o-transition: all .8s;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
+nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+}
+    
+nav ul li a{
+      font-size: 20px;
+}
+    
+a:hover,a.active{
+      background: none;
+      background-color: plum;
+      color: black;
 }
 
-#navbar{
-    background-color: #ffcccc;
-    padding: 20px;
-    box-shadow: 0 0 15px 0;
-    position: fixed;
-    width: 100%;
-    opacity: 0.6;
-    top: 0;
-    overflow: hidden;
-
-
-}
-
-.container_menu{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-}
-
-ul li a{
-    padding: 39px;
-    font-weight: bold;
-
-}
-
-ul li a.selected{
-    background: #ff9999;
-}
-
-ul li a:hover{
-    color: #000;
-    background-color: #ff4d4d;
-    box-shadow: 0 0 10px 0;
-    text-decoration: none;
-    opacity: 1;
-}
-
-/* Hmmm Facebook?! :D  */
-.icon-bar {
-    position: fixed;
-    top: 90%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+#check:checked ~ ul{
+      left: 0;
+    }
 }
   
-.icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
+section{
+    background-size: cover;
+    height: calc(100vh - 80px);
 }
-.icon-bar a:hover {
-    background-color: deeppink;
-}
-  
-.facebook {
-    background: darkviolet;
-    color: white;
-}
-
